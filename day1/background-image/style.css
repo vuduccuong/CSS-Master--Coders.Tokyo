@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+.list-item {
+    font-family: 'Dancing Script', cursive;
+    color: blue;
+    font-weight: bold;
+    padding: 16px;
+    margin-bottom: 8px;
+    /* border-width: 1px; */
+    border-style: solid;
+    list-style: none;
+    border-color: #DDD;
+    /* Bo 1 bên */
+    border-left-width: 2px;
+    /* Rút gọn */
+    /* border-width: top right bottom left; */
+    /* Làm cong */
+    border-radius: 5px;
+    /* Backgound-color */
+    background-color: #DDD;
+}
+
+
+/* Background Trance */
+
+.list-item-transparent {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 154, 253, 1) 100%);
+}
+
+
+/* Backgroud-image */
+
+.list-item-pattern {
+    background-image: url('./images/16217247.jpg');
+    background-size: 10%;
+    height: 100px;
+    /* background-repeat: repeat-y repeat-x; Lặp lại theo trục */
+}
+
+.list-item-image {
+    background-image: url('./images/mantas-hesthaven-rpjVeIkjyQI-unsplash.jpg');
+    background-size: cover;
+    height: 500px;
+    background-position: 0 -200px;
+}
+
+
+/* có hiệu ứng khi lăn  chuột */
+
+.list-item-parallax {
+    background-image: url('./images/mantas-hesthaven-rpjVeIkjyQI-unsplash.jpg');
+    background-size: cover;
+    height: 500px;
+    background-position: ;
+    background-attachment: fixed;
+}

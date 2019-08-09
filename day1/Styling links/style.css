@@ -1,0 +1,43 @@
+.list-item {
+    font-family: sans-serif;
+    color: blue;
+    font-weight: bold;
+    padding: 16px;
+    margin-bottom: 8px;
+    /* border-width: 1px; */
+    border-style: solid;
+    list-style: none;
+    border-color: #888;
+    /* Bo 1 bên */
+    border-left-width: 2px;
+    /* Rút gọn */
+    /* border-width: top right bottom left; */
+    /* Làm cong */
+    border-radius: 5px;
+}
+
+
+/* Trạng thái của một thẻ a
+1) a: link
+2) a: visited
+3) a: hover
+4) a: active
+*/
+
+a:link {
+    color: red;
+    text-decoration: none;
+    /*Không gạch chân */
+}
+
+a:visited {
+    color: chocolate;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(241, 238, 31);
+}

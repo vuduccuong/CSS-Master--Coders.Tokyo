@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+.list-item {
+    font-family: 'Dancing Script', cursive;
+    color: blue;
+    font-weight: bold;
+    padding: 16px;
+    margin-bottom: 8px;
+    /* border-width: 1px; */
+    border-style: solid;
+    list-style: none;
+    border-color: #DDD;
+    /* Bo 1 bên */
+    border-left-width: 2px;
+    /* Rút gọn */
+    /* border-width: top right bottom left; */
+    /* Làm cong */
+    border-radius: 5px;
+    /* Backgound-color */
+    background-color: #DDD;
+}
+
+
+/* Background Trance */
+
+.list-item-transparent {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 154, 253, 1) 100%);
+}

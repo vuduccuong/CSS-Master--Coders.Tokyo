@@ -1,0 +1,8 @@
+h1 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+p {
+    font-family: 'Dancing Script', cursive;
+}
