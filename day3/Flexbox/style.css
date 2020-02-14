@@ -1,0 +1,220 @@
+body {
+  background-color: #ccc;
+}
+/* Nav */
+.nav {
+  min-height: 42px;
+  background-color: #ef5122;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  padding-left: 0;
+  margin: auto 16px;
+}
+
+.nav-item {
+  color: #fff;
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+/* End Nav */
+
+/* Form */
+
+.form-container {
+  max-width: 720px;
+  padding: 32px;
+  margin: 36px auto 0 auto;
+  background-color: #fff;
+}
+
+.form_row {
+  padding: 8px 0;
+  display: flex;
+}
+
+.form_label {
+  min-width: 120px;
+}
+
+.form_input {
+  flex: 1;
+}
+/* End Form */
+
+/* Column Layout */
+.column-layout {
+  margin-top: 36px;
+  padding: 12px 0;
+  background-color: #fff;
+  display: flex;
+}
+
+.column-item {
+  padding: 0 16px;
+}
+
+.sidebar-one {
+  flex: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+}
+
+.main-column {
+  flex: 3;
+}
+
+/* End Column Layout */
+
+/* Feature Layout */
+.feature-layout {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* thằng này cách đều hết */
+  /* 
+  justify-content: space-between; thằng này chỉ cách các item, không cách 2 bên
+  justify-content: space-around; thằng đầu tiên và thằng cuối cùng cách 2 bên bằng 1 nửa khoảng ở giữa các thằng
+   */
+}
+
+.feature-item {
+  padding: 12px 16px;
+  margin-top: 16px;
+  flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+  background-color: aliceblue;
+}
+
+.feature-item:nth-child(2) {
+  background-color: aquamarine;
+}
+
+.feature-item:nth-child(3) {
+  background-color: aquamarine;
+}
+
+/* PC, Tablet */
+@media (min-width: 740px) {
+  .feature-layout {
+    flex-direction: row;
+  }
+}
+/* End Feature Layout */
+
+/* Wrap Layout */
+.wrap-layout {
+  background-color: #fff;
+  margin-top: 36px;
+  padding: 12px 0 32px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* Khi co màn hình thì xuống dòng
+  
+  flex-wrap: wrap-reverse; Khi co màn hình thì lên dòng
+  */
+}
+
+.wrap-layout_item {
+  width: 148px;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+  background-color: #ef5122;
+}
+/* End Wrap Layout */
+
+/* Center Layout */
+.center-layout {
+  background-color: aquamarine;
+  margin: 36px auto 0 auto;
+  padding: 32px 0;
+  max-width: 640px;
+  height: 360px;
+  display: flex;
+}
+
+.center-layout_item {
+  font-size: 42px;
+  font-weight: 700;
+  margin: auto;
+}
+/* End Center Layout */
+
+/* Chart Layout */
+.chart-layout {
+  margin: 36px auto 0 auto;
+  padding: 32px;
+  height: 320px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.chart-layout_item {
+  width: 60px;
+  color: #fff;
+  text-align: center;
+  height: var(--percent);
+  background-color: #ef5122;
+  animation: growth ease-in 0.5s;
+}
+
+@keyframes growth {
+  from {
+    opacity: 0;
+    height: calc(var(--percent) -50%);
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+/* End Chart Layout */
+
+/* The End */
+.the-end {
+  margin: 12px auto 48px auto;
+  padding: 32px 0;
+  max-width: 740px;
+  min-height: 360px;
+  display: flex;
+}
+
+.the-end__first {
+  padding: 4px 16px;
+  background-color: #fff;
+  flex: 1;
+}
+
+.the-end__second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.the-end__second-one {
+  padding: 4px 16px;
+  background-color: violet;
+  flex: 1;
+}
+
+.the-end__second-two {
+  padding: 4px 16px;
+  background-color: tomato;
+  flex: 1;
+}
