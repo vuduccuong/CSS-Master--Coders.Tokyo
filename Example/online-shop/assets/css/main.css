@@ -109,10 +109,95 @@
 .header__qr-link:nth-child(1) {
   margin-left: 11px;
 }
+
 .header__qr-link:nth-child(2) {
   margin-right: 14px;
 }
 
 .header__qr-dowload-img {
   height: 18px;
+}
+
+
+/* Nopti */
+.header__notify {
+  position: absolute;
+  top: 118%;
+  width: 404px;
+  background-color: var(--white-color);
+  right: 0;
+  border: 1px solid #d3d3d3;
+}
+
+.header__notify-header {
+  height: 40px;
+  background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+  color: #999999;
+  margin: 0 0 0 12px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 40px
+}
+
+.header__notify-list {
+  padding-left: 0;
+}
+
+.header__notify-item {
+  display: flex;
+}
+
+.header__notify-item:hover {
+  background-color: #f7f7f7;
+}
+
+.header__notify-item--viewed {
+  background-color: rgba(238, 75, 43, 0.1);
+}
+
+.header__notify-item a {
+  display: flex;
+}
+
+.header__notify-link {
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.header__notify-img {
+  width: 48px;
+  object-fit: contain;
+}
+
+.header__notify-info {
+  margin-left: 12px;
+}
+
+.header__notify-name {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--black-color);
+  font-weight: 400;
+}
+
+.header__notify-description {
+  display: block;
+  font-size: 1.2rem;
+  color: #757575
+}
+
+.header__notify-footer {
+  text-align: center;
+  display: block;
+}
+
+.header__notify-footer--btn {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 16px 16px;
 }
