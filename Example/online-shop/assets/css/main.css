@@ -24,6 +24,10 @@
   display: block;
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+  display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
   display: inline-block;
@@ -127,10 +131,36 @@
   background-color: var(--white-color);
   right: 0;
   border: 1px solid #d3d3d3;
+  cursor: default;
+  transform-origin: calc(100% - 20px) top;
+  animation: headerNotifyGrowth ease-in 0.25s;
+  will-change: opacity, transform;
+  /* Tối ưu animation cho 2 thuộc tính khai báo */
+  display: none;
+}
+
+.header__notify::before {
+  content: "";
+  border-style: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+.header__notify::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -16px;
+  width: 88px;
+  height: 20px;
 }
 
 .header__notify-header {
-  height: 40px;
+  height: 44px;
   background-color: var(--white-color);
 }
 
@@ -139,7 +169,9 @@
   margin: 0 0 0 12px;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 40px
+  line-height: 40px;
+  cursor: text;
+  user-select: none;
 }
 
 .header__notify-list {
@@ -181,23 +213,41 @@
 .header__notify-name {
   display: block;
   font-size: 1.4rem;
-  color: var(--black-color);
+  color: var(--text-color);
   font-weight: 400;
+  line-height: 1.8rem;
 }
 
 .header__notify-description {
   display: block;
   font-size: 1.2rem;
-  color: #757575
+  color: #757575;
+  margin-top: 4px;
 }
 
 .header__notify-footer {
-  text-align: center;
-  display: block;
+  display: flex;
 }
 
 .header__notify-footer--btn {
   text-decoration: none;
   color: var(--text-color);
-  padding: 16px 16px;
+  padding: 10px 32px;
+  margin: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* Enimation Notify */
+
+@keyframes headerNotifyGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
