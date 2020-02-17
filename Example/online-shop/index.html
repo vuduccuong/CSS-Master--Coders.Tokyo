@@ -98,10 +98,10 @@
                 Trợ giúp
               </a>
             </li>
-            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate" id="btn-register">
               Đăng ký
             </li>
-            <li class="header__navbar-item header__navbar-item--strong">
+            <li class="header__navbar-item header__navbar-item--strong" id="btn-login">
               Đăng nhập
             </li>
           </ul>
@@ -118,7 +118,12 @@
             </svg>
           </div>
 
-          <div class="header__search"></div>
+          <div class="header__search">
+            <div class="header__search--main">
+              <input type="text" class="header__search--main-input">
+              
+            </div>
+          </div>
 
           <div class="header__cart">
             <i class="fas fa-shopping-cart header__cart-icon"></i>
@@ -135,11 +140,11 @@
   </div>
 
   <!-- Modal -->
-  <!-- <div class="modal">
+  <div class="modal">
     <div class="modal__overlay"></div>
-    <div class="modal__body"> -->
+    <div class="modal__body">
   <!-- Register Form -->
-  <!-- <div class="auth-form">
+  <div class="auth-form auth-form__register">
         <div class="auth-form__container">
           <div class="auth-form__header">
             <h3 class="auth-form__heading">Đăng ký</h3>
@@ -182,13 +187,13 @@
             <span class="auth-form__socials-title">Kết nối với Google</span>
           </a>
         </div>
-      </div> -->
+      </div>
 
   <!-- Login Form -->
-  <!-- <div class="auth-form">
+  <div class="auth-form auth-form__login">
         <div class="auth-form__container">
           <div class="auth-form__header">
-            <h3 class="auth-form__heading">Đăng nhập</h3>
+            <h3 class="auth-form__heading ">Đăng nhập</h3>
             <span class="auth-form__switch-btn">Đăng ký</span>
           </div>
 
@@ -227,7 +232,10 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- js -->
+  <script defer src="./assets/js/main.js"></script>
 </body>
 
 </html>

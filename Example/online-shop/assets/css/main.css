@@ -122,7 +122,6 @@
   height: 18px;
 }
 
-
 /* Nopti */
 .header__notify {
   position: absolute;
@@ -252,8 +251,6 @@
   }
 }
 
-
-
 /* Form đăng ký */
 
 .auth-form {
@@ -288,7 +285,8 @@
   cursor: pointer;
 }
 
-.auth-form__form {}
+.auth-form__form {
+}
 
 .auth-form__input {
   width: 94%;
@@ -360,7 +358,6 @@
   background-color: var(--white-color);
   color: #666;
 }
-
 
 /*  Đăng nhập */
 
